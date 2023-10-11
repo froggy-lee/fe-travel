@@ -2,7 +2,7 @@
 import styled from "styled-components";
 import Link from "next/link";
 
-export const Nav = styled.nav<{ toggle?: boolean }>`
+export const Nav = styled.nav<{ $toggle?: boolean }>`
   background: #e3f2fd;
   position: relative;
   z-index: 9;
@@ -10,7 +10,7 @@ export const Nav = styled.nav<{ toggle?: boolean }>`
     position: fixed;
     z-index: 999;
     top: 0;
-    left: ${(props) => (props.toggle ? 0 : "-210px")};
+    left: ${(props) => (props.$toggle ? 0 : "-210px")};
     bottom: 0;
     width: 202px;
     margin-top: 0rem;
@@ -37,7 +37,11 @@ export const MenuItem = styled(Link)`
   border-bottom: 4px solid #e3f2fd;
   text-transform: uppercase;
   font-weight: 600;
-  color: var(--textPrimary);
+  line-height: 24px;
+  color: #02aaeb;
+  &.active {
+    border-bottom: 4px solid var(--textPrimary);
+  }
   &:hover {
     border-bottom: 4px solid var(--textPrimary);
   }
@@ -48,7 +52,8 @@ export const MenuItem = styled(Link)`
 export const BuyTicket = styled.button`
   padding: 0.2rem 0.5rem;
   border-radius: 10px;
-  color: #ffe943;
+  color: #fff;
+  line-height: 18px;
   background: var(--textPrimary);
 `;
 
@@ -56,7 +61,7 @@ export const Logo = styled(Link)`
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, -18%);
   cursor: pointer;
   @media (max-width: 1199px) {
     left: 0rem;

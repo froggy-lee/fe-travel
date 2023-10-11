@@ -6,6 +6,7 @@ export const Wrapper = styled.section`
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: -1;
   background: url("/images/bg-login1.jpg") no-repeat;
   background-size: cover;
   display: flex;

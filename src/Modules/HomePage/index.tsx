@@ -1,10 +1,13 @@
 import React from "react";
 import Link from "next/link";
+import BannerSection from "./Banner";
 
 function HomePage() {
   return (
     <div>
-      This is Home Page
+      <div>
+        <BannerSection />
+      </div>
       <div>
         <Link href={"/login"}>Login</Link>
       </div>

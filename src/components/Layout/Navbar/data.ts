@@ -29,7 +29,7 @@ export const menuRight = [
   },
   {
     id: 6,
-    title: "Giới Thiệu",
+    title: "Tuyển Dụng",
     href: "/#",
   },
 ];

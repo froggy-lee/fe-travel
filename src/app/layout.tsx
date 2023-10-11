@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 import ReactQuery from "@/lib/react-query";
 import ReduxProvider from "@/lib/redux";
 import Layout from "@/components/Layout";
+
 const DynamicBootstrap = dynamic(
   () => require("bootstrap/dist/js/bootstrap.min.js"),
   { ssr: false }

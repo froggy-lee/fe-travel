@@ -41,7 +41,7 @@
   font-size: 16px;
   --primary: #DE6777;
   --primarySecond: #F9E2E5;
-  --textPrimary:#d11313;
+  --textPrimary:#02aaeb;
 }
 @media(max-width: 576px) {
   :root{
