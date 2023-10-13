@@ -17,7 +17,7 @@ export const Nav = styled.nav<{ $toggle?: boolean }>`
     border-right: 2px solid #a9a9a9;
     transition: all 0.5s;
     .nav-left {
-      margin-top: 10rem !important;
+      margin-top: 8rem !important;
     }
   }
 `;
@@ -25,7 +25,7 @@ export const Nav = styled.nav<{ $toggle?: boolean }>`
 export const BackDrop = styled.div`
   position: fixed;
   inset: 0 0 0 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 998;
   @media (min-width: 1200px) {
     display: none;
@@ -45,12 +45,13 @@ export const MenuItem = styled(Link)`
   &:hover {
     border-bottom: 4px solid var(--textPrimary);
   }
-  @media (max-width: 1199px) {
+  &.buy-ticket {
+    padding: 0.7rem !important;
   }
 `;
 
 export const BuyTicket = styled.button`
-  padding: 0.2rem 0.5rem;
+  padding: 0.5rem;
   border-radius: 10px;
   color: #fff;
   line-height: 18px;
@@ -61,11 +62,15 @@ export const Logo = styled(Link)`
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -18%);
+  transform: translate(-50%, -24%);
   cursor: pointer;
   @media (max-width: 1199px) {
     left: 0rem;
     top: 1rem;
     transform: translate(0, 0);
+    img {
+      width: 200px;
+      height: 85px;
+    }
   }
 `;

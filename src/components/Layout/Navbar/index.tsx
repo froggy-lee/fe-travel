@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import * as S from "./styles";
 import Image from "next/image";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaTicketAlt } from "react-icons/fa";
 import { menuLeft, menuRight } from "./data";
 import { usePathname } from "next/navigation";
 
@@ -14,8 +15,8 @@ function Navbar() {
   return (
     <>
       {toggle && <S.BackDrop onClick={handleToggle} />}
-      <button onClick={handleToggle} className="d-xl-none m-3">
-        <GiHamburgerMenu size="3rem" />
+      <button onClick={handleToggle} className="d-xl-none mx-3 my-2">
+        <GiHamburgerMenu size="2rem" />
       </button>
       <S.Nav $toggle={toggle}>
         <section className="container d-flex justify-content-between flex-column flex-xl-row">
@@ -36,8 +37,8 @@ function Navbar() {
           <S.Logo className="logo" href="/">
             <Image
               src={"/images/logo/logo.png"}
-              width={250}
-              height={100}
+              width={350}
+              height={150}
               alt="logo"
             />
           </S.Logo>
@@ -54,8 +55,11 @@ function Navbar() {
                 </S.MenuItem>
               );
             })}
-            <S.MenuItem href="#" className="p-3">
-              <S.BuyTicket>Mua vé</S.BuyTicket>
+            <S.MenuItem href="#" className="buy-ticket">
+              <S.BuyTicket className="d-flex align-items-center">
+                <FaTicketAlt className="me-1" />
+                Mua vé
+              </S.BuyTicket>
             </S.MenuItem>
           </ul>
         </section>

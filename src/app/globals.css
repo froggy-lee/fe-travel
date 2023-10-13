@@ -119,6 +119,9 @@ ul, li, ol {
   margin: 0 !important;
   padding: 0 !important;
 }
+.container {
+  margin: auto;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
