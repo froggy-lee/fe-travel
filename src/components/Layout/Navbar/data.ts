@@ -7,29 +7,29 @@ export const menuLeft = [
   {
     id: 2,
     title: "Giới Thiệu",
-    href: "/login",
+    href: "#",
   },
   {
     id: 3,
-    title: "Trải Nghiệm",
-    href: "/register",
+    title: "Tin Tức",
+    href: "#",
   },
 ];
 
 export const menuRight = [
   {
     id: 4,
-    title: "Tin Tức",
-    href: "#",
-  },
-  {
-    id: 5,
     title: "Bản Đồ",
     href: "#",
   },
   {
+    id: 5,
+    title: "Đăng Nhập",
+    href: "/login",
+  },
+  {
     id: 6,
-    title: "Tuyển Dụng",
-    href: "/#",
+    title: "Đăng Kí",
+    href: "/register",
   },
 ];
