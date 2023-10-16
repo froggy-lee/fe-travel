@@ -43,7 +43,7 @@ export const OutStanding = styled.div`
 `;
 
 export const Title = styled.div`
-  color: #de1313;
+  color: #02aaeb;
   font-weight: 600;
   overflow: hidden;
   display: -webkit-box;

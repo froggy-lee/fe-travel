@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import BannerSection from "./Banner";
 import IntroduceSection from "./Introduce";
+import MapAndNewsSection from "./Map&News";
 
 function HomePage() {
   return (
@@ -9,6 +10,7 @@ function HomePage() {
       <div>
         <BannerSection />
         <IntroduceSection />
+        <MapAndNewsSection />
       </div>
       <div>
         <Link href={"/login"}>Login</Link>
