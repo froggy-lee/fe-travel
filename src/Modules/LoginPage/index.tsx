@@ -85,9 +85,9 @@ function LoginPage() {
             <S.Erros>{errors.password}</S.Erros>
           </div>
           <div>
-            <button type="submit" className="p-2 mt-4 w-100">
+            <S.Button type="submit" className="p-2 mt-4 w-100">
               Login
-            </button>
+            </S.Button>
             <div className="mt-1">
               <Link href={"/register"}>Register</Link>
             </div>

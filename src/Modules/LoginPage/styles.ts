@@ -1,14 +1,9 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
   background: url("/images/bg-login1.jpg") no-repeat;
   background-size: cover;
+  padding: 5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,11 +28,19 @@ export const Title = styled.div`
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--textPrimary);
+  color: #fff;
 `;
 
 export const Erros = styled.div`
   font-size: 12px;
   color: red;
   height: 16px;
+`;
+
+export const Button = styled.button`
+  font-size: 18px;
+  font-weight: 700;
+  background: var(--textPrimary);
+  color: #fff;
+  border-radius: 10px;
 `;
